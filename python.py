@@ -1,8 +1,8 @@
 import os
 from random import randint
-for i in range(1, 365):
-    for j in range(0, randint(0, 8)):
-        d = str(i+4) + ' days ago'
+for i in range(365, 365*2):
+    for j in range(0, randint(0, 5)):
+        d = str(i+10) + ' days ago'
         with open('file.txt', 'a') as file:
             file.write(d)
         os.system('git add . ')
